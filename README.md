@@ -1,6 +1,7 @@
 Name: Abraham Dit Manyang
 Index: 18-CIT-001
 Department: IT
+
 Approach:
 1. Import necessary libraries,
 2. Load the MobileNetV2 model,
