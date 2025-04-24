@@ -4,9 +4,9 @@ Department: IT
 
 Approach:
 
-  Baseline Model Establishment  
-  Batch Size and Epoch Tuning
-  Learning Rate Tuning with ReduceLROnPlateau
+  Baseline Model Establishment,  
+  Batch Size and Epoch Tuning,
+  Learning Rate Tuning with ReduceLROnPlateau, and
   Early Stopping and Final Tuning
 
 
