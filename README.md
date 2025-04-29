@@ -4,21 +4,26 @@ Department: IT
 
 Approach:
 
-  Baseline Model Establishment,  
-  Batch Size and Epoch Tuning,
-  Learning Rate Tuning with ReduceLROnPlateau, and
-  Early Stopping and Final Tuning
+1. Data Loading and Preparation,
+2. Image Augmentation using ImageDataGenerator,
+
+For each type of animal (and in Step 4, a general example), a specific ImageDataGenerator is configured with different augmentation parameters:
+Step 4 & 5 (Buffalo): Rotations (0-30 degrees), horizontal and vertical flips are applied.
+Step 6 (Zebra): Width and height shifts (0.05-0.15) are used.
+Step 7 (Rhino): Similar to Zebra but with width/height shifts of (0.1-0.15).
+Step 8 (Elephant): Random brightness adjustments between 0.05 and 2.5 are applied.
+The flow method of ImageDataGenerator is used to generate augmented images on the fly, one at a time.
+3. Visualization
+
 
 
   Overall Strategy
 
-My code follows a systematic approach to improving validation accuracy by:
+In essence, my code uses a systematic approach to create diverse augmented images:
 
-Establishing a baseline: I followed that  create a base model for comparison.
-Tuning key hyperparameters: I methodically adjust batch size and epochs to optimize training.
-Dynamic learning rate adjustment: You employ the ReduceLROnPlateau callback to dynamically control the learning rate.
-Preventing overfitting with early stopping: I  use EarlyStopping to stop training at the optimal point and prevent overfitting.
-Iterative refinement: I continue to refine other hyperparameters based on observed performance.
+Load and prepare images.
+Configure ImageDataGenerator with specific augmentation settings for each animal.
+Generate and visualize the augmented images
 <!---
 ditmanyangkajang-gith/ditmanyangkajang-gith is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
