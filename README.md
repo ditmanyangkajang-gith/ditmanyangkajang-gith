@@ -1,6 +1,7 @@
 <html>
-  <title>Lung Cancer Detection</title>
+ 
   <body>
+     <title>Lung Cancer Detection</title>
   <Div>
     <h1>Welcome To Lung Cancer Detection</h1>
     <Div>
