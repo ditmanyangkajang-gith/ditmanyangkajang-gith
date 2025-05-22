@@ -1,5 +1,4 @@
 <html>
- 
   <body>
      <title>Lung Cancer Detection</title>
   <Div>
